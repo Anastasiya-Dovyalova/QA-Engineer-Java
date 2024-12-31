@@ -29,7 +29,7 @@ public class MTStest implements WebDriverProvider {
 
     @BeforeEach
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/anastasiadovalova/chromedriver/mac-131.0.6778.140/chromedriver-mac-x64/chromedriver"); // Укажите путь к chromedriver
+        System.setProperty("webdriver.chrome.driver", "/Users/anastasiadovalova/chromedriver/mac-131.0.6778.140/chromedriver-mac-x64/chromedriver"); 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         paymentPage = new PaymentPage(driver);
